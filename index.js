@@ -4,6 +4,7 @@ const employee = {
     streetAddress: "35488825",
 }
 
+
 /* returns an employee with the original key value 
    pairs and the new key value pair  */
 function updateEmployeeWithKeyAndValue(employee, key, value){
@@ -11,6 +12,7 @@ function updateEmployeeWithKeyAndValue(employee, key, value){
     newObj[key] = value
     return newObj
 }
+
 updateEmployeeWithKeyAndValue(employee, "sam", "1")
 
 /* does not modify the original employee
@@ -23,6 +25,7 @@ function deleteFromEmployeeByKey(employee, key){
     let newEmployee = delete remEmployee[name]
     return {newEmployee}
 }
+
 deleteFromEmployeeByKey(employee, "Juma")
 
 function destructivelyUpdateEmployeeWithKeyAndValue (employee, key, value) {
